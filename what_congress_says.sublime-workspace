@@ -81,10 +81,52 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Michael/Software/DCCC/what_congress_says"
+		"/C/Users/Michael/Software/DCCC/what_congress_says",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/assets",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/assets/config",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/assets/images",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/assets/javascripts",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/assets/stylesheets",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/controllers",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/controllers/concerns",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/helpers",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/javascript",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/javascript/packs",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/jobs",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/models",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/models/concerns",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/views",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/views/layouts",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/bin",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/config",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/config/environments",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/config/initializers",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/config/webpack",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/lib",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/lib/assets",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/lib/tasks",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/log",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/public",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/tmp",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/tmp/cache/assets",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/vendor"
 	],
 	"file_history":
 	[
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/views/analyzer/index.html.erb",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/node_modules/accepts/index.js",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/config/webpack/shared.js",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/javascript/packs/application.js",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/bin/webpack-dev-server",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/config/webpack/development.js",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/views/layouts/application.html.erb",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/yarn.lock",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/app/controllers/analyzer_controller.rb",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/config/routes.rb",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/Gemfile",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/config/environments/development.rb",
+		"/C/Users/Michael/Software/DCCC/what_congress_says/README.md",
 		"/C/Users/Michael/Desktop/hb259.topojson",
 		"/C/Users/Michael/Software/DCCC/sham_shield/lib/sham_shield/version.rb",
 		"/C/Users/Michael/Dropbox/mKey_private.ppk",
@@ -199,24 +241,11 @@
 		"/C/Users/Michael/Software/SimTerra/simrep/config/database.yml",
 		"/C/Users/Michael/Software/SimTerra/simrep/app/jobs/application_job.rb",
 		"/C/Users/Michael/Software/SimTerra/simrep/config/initializers/devise.rb",
-		"/C/Users/Michael/Software/SimTerra/simrep/app/helpers/application_helper.rb",
-		"/C/Users/Michael/Software/SimTerra/simrep/docker-compose.yml",
-		"/C/Users/Michael/Software/SimTerra/simrep/Dockerfile",
-		"/C/Users/Michael/Software/SimTerra/simrep/bin/rails",
-		"/C/Users/Michael/Software/SimTerra/simrep/.ci.env",
-		"/C/Users/Michael/Software/SimTerra/simrep/simrep.sublime-project",
-		"/C/Users/Michael/Dropbox/Sublime/key.txt",
-		"/C/Users/Michael/Dropbox/497th/APR BA/staffex brief notes.txt",
-		"/C/Users/Michael/Desktop/WindowsUpdate.log",
-		"/C/Windows/WindowsUpdate.log",
-		"/C/Users/Michael/Dropbox/SimTerra/simrep/Vagrantfile",
-		"/C/Users/Michael/Software/adb-control/config.properties",
-		"/C/Users/Michael/Dropbox/SimTerra/simrep/simrep-temp/sftp-config.json",
-		"/C/Users/Michael/Dropbox/RestrictedSimTerraStuff/Tiny Mouse/simrep/Vagrantfile"
+		"/C/Users/Michael/Software/SimTerra/simrep/app/helpers/application_helper.rb"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -345,16 +374,56 @@
 		"selected_items":
 		[
 			[
+				"indexhtmlerb",
+				"app\\views\\analyzer\\index.html.erb"
+			],
+			[
+				"index",
+				"node_modules\\accepts\\index.js"
+			],
+			[
+				"yarnl",
+				"yarn.lock"
+			],
+			[
+				"applicationhtml",
+				"app\\views\\layouts\\application.html.erb"
+			],
+			[
+				"config/webpack",
+				"config\\webpack\\development.js"
+			],
+			[
+				"webpackdev",
+				"bin\\webpack-dev-server"
+			],
+			[
+				"environments/dev",
+				"config\\environments\\development.rb"
+			],
+			[
+				"analyzercontr",
+				"app\\controllers\\analyzer_controller.rb"
+			],
+			[
+				"route",
+				"config\\routes.rb"
+			],
+			[
+				"gemf",
+				"Gemfile"
+			],
+			[
+				"readme",
+				"README.md"
+			],
+			[
 				"version",
 				"lib\\sham_shield\\version.rb"
 			],
 			[
 				"sham",
 				"lib\\sham_shield.rb"
-			],
-			[
-				"readme",
-				"README.md"
 			],
 			[
 				"spec",
@@ -415,10 +484,6 @@
 			[
 				"rack",
 				"config\\initializers\\rack_profiler.rb"
-			],
-			[
-				"gemf",
-				"Gemfile"
 			],
 			[
 				"connectapp",
@@ -737,10 +802,6 @@
 				"app\\views\\bank_accounts\\_bank_account.html.erb"
 			],
 			[
-				"index",
-				"app\\views\\bank_accounts\\index.html.erb"
-			],
-			[
 				"characterindex",
 				"app\\views\\characters\\index.html.erb"
 			],
@@ -823,38 +884,6 @@
 			[
 				"applicationcontr",
 				"app\\controllers\\application_controller.rb"
-			],
-			[
-				"rackprof",
-				"config\\initializers\\rack_profiler.rb"
-			],
-			[
-				"proud",
-				"config\\environments\\production.rb"
-			],
-			[
-				"puma",
-				"config\\puma.rb"
-			],
-			[
-				"puma.rb",
-				"config\\puma.rb"
-			],
-			[
-				"binstart",
-				"bin\\start_web"
-			],
-			[
-				"dumpcharac",
-				"app\\jobs\\dump_character_job.rb"
-			],
-			[
-				"startweb",
-				"bin\\start_web"
-			],
-			[
-				"simrep.env",
-				"docker\\.simrep.env"
 			]
 		],
 		"width": 0.0
@@ -888,7 +917,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 223.0,
 	"status_bar_visible": true,
 	"template_settings":
