@@ -4,7 +4,8 @@
   "dependencies": {
     "bootstrap-loader": "^2.0.0",
     "bootstrap-sass": "^3.3.7",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "wordcloud": "^1.0.6"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",

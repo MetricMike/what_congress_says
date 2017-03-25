@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'analyzer#index'
 
+  get 'analyzer/analyze'
+
   get 'analyzer/markov'
   get 'analyzer/word_cloud'
 

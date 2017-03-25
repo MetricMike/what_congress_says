@@ -1,9 +1,42 @@
-<h1>Analyzer#index</h1>
-<p>Find me in app/views/analyzer/index.html.erb</p>
+<div class="row">
+  <h3 class="text-center">Submit an RSS feed from your Representative/Senator's Office to see
+  what they've been saying!</h3>
+  <h5 class="text-center">Or click on one of the buttons for Leadership below...</h6>
+</div>
 
-<p>Buttons for leadership</p>
+<hr/>
 
-<p>Copy and paste a members press release RSS feed</p>
-<p>RSS Consumer - https://github.com/feedjira/feedjira</p>
-<p>Markov - https://github.com/zolrath/marky_markov</p>
-<p>WordCloud - https://github.com/timdream/wordcloud2.js</p>
+  <div class="row">
+    <div class="btn-group col-md-4 col-md-offset-2" role="group">
+      <button type="button" class="btn btn-default">Speaker</button>
+      <button type="button" class="btn btn-default">Majority Leader</button>
+      <button type="button" class="btn btn-default">Majority Whip</button>
+    </div>
+    <div class="btn-group col-md-4 col-md-offset-2" role="group">
+      <button type="button" class="btn btn-default">Minority Leader</button>
+      <button type="button" class="btn btn-default">Minority Whip</button>
+    </div>
+  </div>
+
+<hr/>
+
+<%= form_tag("/analyze", method: "get") do %>
+  <%= label_tag(:q, "RSS URL:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Analyze") %>
+<% end %>
+
+<hr/>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="well">
+      Col1 - Markov Chain
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="well">
+      Col2 - Word Cloud
+    </div>
+  </div>
+</div>
