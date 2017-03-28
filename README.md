@@ -1,24 +1,27 @@
-# README
+# What Congress Says
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple Rails app that creates a Markov Chain and Word Cloud based on an Congressperson's RSS feed.
 
-Things you may want to cover:
+# Dependencies
 
-* Ruby version
+This app was developed on Windows Subsystem for Linux (build 15063) / Ubuntu 16.04.1 with:
 
-* System dependencies
+* Ruby 2.4.0
+* Rails 5.1.0.rc1
+* Bundler 1.14.6
+* Yarn 0.21.3
 
-* Configuration
+No DB is required.
 
-* Database creation
+# Running Locally
 
-* Database initialization
+```
+git clone git@github.com:MetricMike/what_congress_says.git
+cd what_congress_says
+bundle install
+yarn install
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# In separate terminals:
+bin/webpack-dev-server --watch-poll
+bin/rails s
+```
