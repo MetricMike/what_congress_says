@@ -8,35 +8,34 @@
 
   <div class="row">
     <div class="btn-group col-md-4 col-md-offset-2" role="group">
-      <button type="button" class="btn btn-default">Speaker</button>
-      <button type="button" class="btn btn-default">Majority Leader</button>
-      <button type="button" class="btn btn-default">Majority Whip</button>
+      <button type="button" class="btn btn-default" onclick="fill_form('https://paulryan.house.gov/news/rss.aspx');">Speaker</button>
+      <button type="button" class="btn btn-default" onclick="fill_form('http://kevinmccarthy.house.gov/rss.xml');">Majority Leader</button>
+      <button type="button" class="btn btn-default" onclick="fill_form('https://scalise.house.gov/rss.xml');">Majority Whip</button>
     </div>
     <div class="btn-group col-md-4 col-md-offset-2" role="group">
-      <button type="button" class="btn btn-default">Minority Leader</button>
-      <button type="button" class="btn btn-default">Minority Whip</button>
+      <button type="button" class="btn btn-default" onclick="fill_form('https://pelosi.house.gov/rss.xml');">Minority Leader</button>
+      <button type="button" class="btn btn-default" onclick="fill_form('https://hoyer.house.gov/rss/press-releases.xml');">Minority Whip</button>
     </div>
   </div>
 
 <hr/>
 
-<%= form_tag("/analyze", method: "get") do %>
-  <%= label_tag(:q, "RSS URL:") %>
-  <%= text_field_tag(:q) %>
-  <%= submit_tag("Analyze") %>
+<%= bootstrap_form_tag url: '/analyze', layout: :horizontal, remote: true, html: { id: 'rss_form' } do |f| %>
+  <%= f.url_field :rss_url, label: 'RSS URL:', required: true %>
+  <%= f.submit "Analyze", class: "btn btn-default center-block quarter-width" %>
 <% end %>
 
 <hr/>
 
-<div class="row">
+<div class="row" id="results">
   <div class="col-md-6">
-    <div class="well">
-      Col1 - Markov Chain
+    <h4 class="text-center"><a href="https://filiph.github.io/markov/">Markov Chain</a></h4>
+    <div class="well" id="markov-well">
     </div>
   </div>
   <div class="col-md-6">
-    <div class="well">
-      Col2 - Word Cloud
+    <h4 class="text-center"><a href="http://www.niemanlab.org/2011/10/word-clouds-considered-harmful/">Word Cloud</a></h4>
+    <div class="well" id="wordcloud-well">
     </div>
   </div>
 </div>

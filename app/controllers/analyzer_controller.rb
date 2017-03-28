@@ -1,27 +1,21 @@
 class AnalyzerController < ApplicationController
+  include AnalyzerHelper
+  rescue_from Feedjira::FetchFailure, with: :fail_message
+
   def index
   end
 
   def analyze
-    feed = Feedjira::Feed.fetch_and_parse(params[:url])
+    feed = Feedjira::Feed.fetch_and_parse(params[:rss_url])
+    clean_feed = clean_entries(feed)
+
+    render json: {
+      markov: markov(clean_feed),
+      wordcloud: word_cloud(clean_feed)
+      }, status: :ok
   end
 
-  private # this should probably go in a model
-
-  def clean(feed)
-    # For 10 most recent entries
-    # For each entry, split into sentences.
-  end
-
-  def markov
-    markov = MarkyMarkov::TemporaryDictionary.new
-    entries.each { |e| markov.parse_string e }
-    puts markov.generate_n_sentences 5
-  end
-
-  def word_cloud
-    # Strip all punctuation
-    # Get array of ['word', freq_num]
-    # Pass object back
+  def fail_message
+    head :internal_server_error
   end
 end
