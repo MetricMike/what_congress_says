@@ -8,7 +8,7 @@ module AnalyzerHelper
       end
     end
 
-    markov.generate_n_sentences 5
+    markov.generate_n_sentences 3
   end
 
   def word_cloud(clean_feed)
@@ -18,6 +18,8 @@ module AnalyzerHelper
     sieve = Stopwords::Snowball::WordSieve.new
     filtered_tokens = sieve.filter lang: :en, words: tokens
     counter = WordsCounted::Counter.new(filtered_tokens)
+
+    counter.token_frequency
   end
 
   # Takes an array of entries, and returns an array of arrays (sentences from summary)

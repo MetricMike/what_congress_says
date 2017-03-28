@@ -53,7 +53,14 @@ config = {
         use: 'file-loader',
       },
       // Bootstrap 3
-      { test: /bootstrap-sass\/assets\/javascripts\//, use: 'imports-loader?jQuery=jquery' },
+      {
+        test: /bootstrap-sass\/assets\/javascripts\//,
+        use: 'imports-loader?jQuery=jquery'
+      },
+      {
+        test: /wordcloud/,
+        use: 'imports-loader?define=>false'
+      },
     ]
   },
 

@@ -3976,10 +3976,6 @@ window-size@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/window-size/-/window-size-0.2.0.tgz#b4315bb4214a3d7058ebeee892e13fa24d98b075"
 
-wordcloud@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/wordcloud/-/wordcloud-1.0.6.tgz#7e98e0a2fd2410c5ddbf67536135f0ae6e9e91b1"
-
 wordwrap@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.2.tgz#b79669bb42ecb409f83d583cad52ca17eaa1643f"
